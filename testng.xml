@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <parameter name="browser" value="chrome"></parameter>
+    <test verbose="2" preserve-order="true" name="TestJsonPlaceholder" parallel = "methods" thread-count = "2">
+        <classes>
+            <class name="PostsAPITest">
+                <methods>
+                    <include name="TC01"></include>
+                    <include name="TC02"></include>
+                    <include name="TC03"></include>
+                    <include name="TC04"></include>
+                    <include name="TC05"></include>
+                    <include name="TC06"></include>
+                    <include name="TC07"></include>
+                    <include name="TC011"></include>
+                </methods>
+            </class>
+
+        <class name="UserAPITest">
+            <methods>
+                <include name="TC08"></include>
+
+            </methods>
+        </class>
+        </classes>
+    </test>
+</suite>
